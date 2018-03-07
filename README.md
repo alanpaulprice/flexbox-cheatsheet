@@ -21,6 +21,14 @@ all items will then expand to fill the new, free space\
 ```
 flex-wrap: <value>
 ```
+the default ```<value>``` is ```flex-start```, items are aligned to the left\
+when ```<value>``` is ```flex-end```, items will be aligned to the right/end\
+when ```<value>``` is ```center```, items will be centered.\
+when ```<value>``` is ```space-around```, the leftover space will act as a kind of margin between items, equally distributed\
+when ```<value>``` is ```space-between```, same as ```space-around```, but with none on the outer edges of the first/last elements
+```
+justify-content: <value>
+```
 
 ---
 
