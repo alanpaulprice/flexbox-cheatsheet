@@ -10,38 +10,41 @@ html structure
 
 ### container
 turn an element into a flex container.\
-by default, items will stack left to right and the container will span full width
 ```
 display: flex
 ```
-when a minimum width is reached, by default (```<value>``` of ```nowrap```), the items will start to go off the page\
-```<value>``` of ```wrap```, the last item(s) will be pushed below\
-```<value>``` of ```reverse```, the last item(s) will be pushed above\
-all items will then expand to fill the new, free space\
+default: ```<value>``` = ```nowrap```: when a minimum width is reached, items will start to go off the page\
+<value>``` = ```wrap```: the last item(s) will be pushed below\
+```<value>``` = ```reverse```: the last item(s) will be pushed above. all items will then expand to fill the new, free space\
 ```
 flex-wrap: <value>
 ```
-the default ```<value>``` is ```flex-start```, items are aligned to the left\
-when ```<value>``` is ```flex-end```, items will be aligned to the right/end\
-when ```<value>``` is ```center```, items will be centered.\
-when ```<value>``` is ```space-around```, the leftover space will act as a kind of margin between items, equally distributed\
-when ```<value>``` is ```space-between```, same as ```space-around```, but with none on the outer edges of the first/last elements
+default: ```<value>``` = ```flex-start```: items are aligned to the left\
+```<value>``` = ```flex-end```: items aligned to the right\
+```<value>``` = ```center```: items will be centered.\
+```<value>``` = ```space-around```: leftover space will be used as a margin between items, equally distributed\
+```<value>``` = ```space-between```: same as ```space-around```, but with none on the outer edges of the first/last elements
 ```
 justify-content: <value>
 ```
+default: ```<value>``` = ```row```: items stack left to right\
+```<value>``` = ``` ```
+```
+flex-flow: <value>
 
 ---
 
 ### items
-by default, ```<value>``` is ```0``` (no growth)\
+default: ```<value>``` = ```0```: no growth\
 when applied to items, they will expand into available width.\
 ```<value>``` is used to determine how much items will grow in relation to eachother\
-(an item with a ```<value>``` of 2 will grow twice as fast as an item with a ```<value>``` of 1)
+an item with a ```<value>``` of 2 will grow twice as fast as an item with a ```<value>``` of 1
 ```
 flex-grow: <value>
 ```
-the opposite of ```flex-grow```. by default, items will shrink at the same rate\
-the higher the ```<value>```, the more it will shrink
+the opposite of ```flex-grow```\
+default: ```<value>```  = 1: items will shrink at the same rate\
+the higher the ```<value>```, the more an item will shrink
 ```
 flex-shrink: <value>
 ```
@@ -52,7 +55,8 @@ if ```flex-shrink``` is disabled, this will be their minimum width
 flex-basis: <value>
 ```
 a shorthand method to define ```flex-grow```, ```flex-shrink``` and ```flex-basis``` all at once\
-if a single ```<value>``` is presented, it will be used to define the ```flex-grow```and ```flex-shrink```. ```flex-basis``` will be left at a default ```<value>``` of ```0```.
+if a single ```<value>``` is presented, it will be used to define the ```flex-grow```and ```flex-shrink```. ```flex-basis``` will be untouched\
+default: ```<value>``` = ```0```
 ```
 flex: <flex-grow> <flex-shrink> <flex-basis>
 ```
