@@ -13,7 +13,7 @@ turn an element into a flex container
 ```
 display: flex
 ```
-determines the direction in which items will stack and which axis are the main and cross
+determines the direction in which items will stack and which axis are the main and cross\
 default: ```<value>``` = ```row```: items stack left to right, aligned to the left\
 ```<value>``` = ```column```: items stack top to bottom, aligned to the top\
 ```<value>``` = ```row-reverse```: items will start right to left, aligned to the right\
