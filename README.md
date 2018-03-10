@@ -9,7 +9,7 @@ html structure
 ---
 
 ### container
-turn an element into a flex container.\
+turn an element into a flex container
 ```
 display: flex
 ```
@@ -23,7 +23,7 @@ flex-direction: <value>
 ```
 default: ```<value>``` = ```nowrap```: when a minimum width is reached, items will start to go off the page\
 <value>``` = ```wrap```: the last item(s) will be pushed below\
-```<value>``` = ```reverse```: the last item(s) will be pushed above. all items will then expand to fill the new, free space\
+```<value>``` = ```reverse```: the last item(s) will be pushed above. all items will then expand to fill the new, free space
 ```
 flex-wrap: <value>
 ```
@@ -47,7 +47,7 @@ justify-content: <value>
 default: ```<value>``` = ```0```: no growth\
 when applied to items, they will expand into available space (main axis)\*\
 ```<value>``` is used to determine how much items will grow in relation to eachother\
-an item with a ```<value>``` of 2 will grow twice as fast as an item with a ```<value>``` of 1
+an item with a ```<value>``` of 2 will grow twice as fast as an item with a ```<value>``` of ```1```
 ```
 flex-grow: <value>
 ```
@@ -57,14 +57,14 @@ the higher the ```<value>```, the more an item will shrink
 ```
 flex-shrink: <value>
 ```
-defines the starting size of an item on the main axis *\\
+defines the starting size of an item on the main axis \*\
 if ```flex-grow``` isn't enabled, this will be their max size\
 if ```flex-shrink``` is disabled, this will be their min size
 ```
 flex-basis: <value>
 ```
 a shorthand for setting ```flex-grow```, ```flex-shrink``` and ```flex-basis```\
-if a single ```<value>``` is presented, it will be used to define the ```flex-grow```and ```flex-shrink```. ```flex-basis``` will be untouched\
+if a single ```<value>``` is presented, it will be used to define the ```flex-grow```and ```flex-shrink```. ```flex-basis``` will be untouched
 ```
 flex: <flex-grow> <flex-shrink> <flex-basis>
 ```
