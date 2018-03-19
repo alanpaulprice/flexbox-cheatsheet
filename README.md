@@ -9,46 +9,52 @@ example html
 ---
 
 ### container
-turn an element into a flex container
 ```
 display: flex
 ```
+turn an element into a flex container
+
 ---
+```
+flex-direction: <value>
+```
 determines the direction in which items will stack and which axis are the main/cross\
 default: ```<value>``` = ```row```: items stack left to right, aligned to the left\
 ```<value>``` = ```column```: items stack top to bottom, aligned to the top\
 ```<value>``` = ```row-reverse```: items will start right to left, aligned to the right\
 ```<value>``` = ```column-reverse```: items stack bottom to top, aligned to the bottom\
-```
-flex-direction: <value>
-```
+
 ---
-default: ```<value>``` = ```nowrap```: when a minimum width is reached, items will start to go off the page\
-```<value>``` = ```wrap```: the last item(s) will be pushed below\
-```<value>``` = ```reverse```: the last item(s) will be pushed above. all items will then expand to fill the new, free space
 ```
 flex-wrap: <value>
 ```
+default: ```<value>``` = ```nowrap```: when a minimum width is reached, items will start to go off the page\
+```<value>``` = ```wrap```: the last item(s) will be pushed below\
+```<value>``` = ```reverse```: the last item(s) will be pushed above. all items will then expand to fill the new, free space
+
 ---
-a shorthand for setting ```flex-direction```and ```flex-wrap```
 ```
 flex-flow: <flex-direction> <flex-wrap>
 ```
+a shorthand for setting ```flex-direction```and ```flex-wrap```
+
 ---
+```
+justify-content: <value>
+```
 ```justify-content``` applies to the main axis\*\
 default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```<value>``` = ```flex-end```: items aligned to the end\
 ```<value>``` = ```center```: items will be centered.\
 ```<value>``` = ```space-around```: leftover space will be used as a margin between items, equally distributed\
 ```<value>``` = ```space-between```: same as ```space-around```, but with none on the outer edges of the first/last elements
-```
-justify-content: <value>
-```
+
 ---
-```align-items``` is the cross axis version of ```justify-content``` and uses the same values\*\
 ```
 align-items: <value>
 ```
+```align-items``` is the cross axis version of ```justify-content``` and uses the same values\*\
+
 ---
 ---
 ---
