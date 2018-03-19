@@ -1,10 +1,10 @@
-html structure
 ```
 <flex-container>
   <flex-item>
   <flex-item>
 </flex-container>
 ```
+example html
 
 ---
 
@@ -13,6 +13,7 @@ turn an element into a flex container
 ```
 display: flex
 ```
+---
 determines the direction in which items will stack and which axis are the main/cross\
 default: ```<value>``` = ```row```: items stack left to right, aligned to the left\
 ```<value>``` = ```column```: items stack top to bottom, aligned to the top\
@@ -21,16 +22,19 @@ default: ```<value>``` = ```row```: items stack left to right, aligned to the le
 ```
 flex-direction: <value>
 ```
+---
 default: ```<value>``` = ```nowrap```: when a minimum width is reached, items will start to go off the page\
 ```<value>``` = ```wrap```: the last item(s) will be pushed below\
 ```<value>``` = ```reverse```: the last item(s) will be pushed above. all items will then expand to fill the new, free space
 ```
 flex-wrap: <value>
 ```
+---
 a shorthand for setting ```flex-direction```and ```flex-wrap```
-  ```
-  flex-flow: <flex-direction> <flex-wrap>
-  ```
+```
+flex-flow: <flex-direction> <flex-wrap>
+```
+---
 ```justify-content``` applies to the main axis\*\
 default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```<value>``` = ```flex-end```: items aligned to the end\
@@ -40,13 +44,14 @@ default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```
 justify-content: <value>
 ```
+---
 ```align-items``` is the cross axis version of ```justify-content``` and uses the same values\*\
 ```
 align-items: <value>
 ```
-
 ---
-
+---
+---
 ### items
 when applied to items, they will expand into available space (main axis)\*\
 default: ```<value>``` = ```0```: no growth\
@@ -55,23 +60,27 @@ an item with a ```<value>``` of 2 will grow twice as fast as an item with a ```<
 ```
 flex-grow: <value>
 ```
+---
 the opposite of ```flex-grow```\
 default: ```<value>```  = 1: items will shrink at the same rate\
 the higher the ```<value>```, the more an item will shrink
 ```
 flex-shrink: <value>
 ```
+---
 defines the starting size of an item on the main axis \*\
 ```flex-grow``` = 0: ```<value>``` will be their max size\
 ```flex-shrink``` = 0: ```<value>``` will be their min size\
 ```
 flex-basis: <value>
 ```
+---
 a shorthand for setting ```flex-grow```, ```flex-shrink``` and ```flex-basis```\
 if a single ```<value>``` is presented, it will be used to define the ```flex-grow```and ```flex-shrink```. ```flex-basis``` will be untouched
 ```
 flex: <flex-grow> <flex-shrink> <flex-basis>
 ```
+---
 changes the order in which the items appear\
 default: ```0```: normal behaviour\
 ```<value>``` can be any integer, items arranged lowest to highest
