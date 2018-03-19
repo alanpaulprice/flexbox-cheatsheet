@@ -40,8 +40,7 @@ default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```
 justify-content: <value>
 ```
-```align-items``` applies to the cross axis\*\
-
+```align-items``` is the cross axis version of ```justify-content``` and uses the same values\*\
 ```
 align-items: <value>
 ```
@@ -73,7 +72,12 @@ if a single ```<value>``` is presented, it will be used to define the ```flex-gr
 ```
 flex: <flex-grow> <flex-shrink> <flex-basis>
 ```
-
+changes the order in which the items appear\
+default: ```0```: normal behaviour\
+```<value>``` can be any integer, items arranged lowest to highest
+```
+order: <value>
+```
 ---
 
 \* depending on which direction is chosen as the main axis (determined by ```flex-direction```), this value could apply to the horizontal or vertical
