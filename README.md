@@ -59,7 +59,7 @@ default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```
 align-items: <value>
 ```
-```align-items``` is the cross axis version of ```justify-content``` and uses the same values\*\
+```align-items``` is the cross axis version of ```justify-content```\
 
 ---
 ---
