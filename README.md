@@ -61,7 +61,7 @@ default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```
 align-items: <value>
 ```
-```align-items``` is the cross axis version of ```justify-content```
+```align-items``` is the cross axis version of ```justify-content```\
 default: ```<value>``` = ```stretch```: stretches items to fit container\
 ```<value>``` = ```flex-start```: items are aligned to the start\
 ```<value>``` = ```flex-end```: items aligned to the end\
