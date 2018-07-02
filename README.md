@@ -4,9 +4,11 @@
   <flex-item>
 </flex-container>
 ```
+
 ---
 ---
 ---
+
 ### container
 ---
 
@@ -59,7 +61,12 @@ default: ```<value>``` = ```flex-start```: items are aligned to the start\
 ```
 align-items: <value>
 ```
-```align-items``` is the cross axis version of ```justify-content```\
+```align-items``` is the cross axis version of ```justify-content```
+default: ```<value>``` = ```stretch```: stretches items to fit container\
+```<value>``` = ```flex-start```: items are aligned to the start\
+```<value>``` = ```flex-end```: items aligned to the end\
+```<value>``` = ```center```: items will be centered.\
+```<value>``` = ```baseline```: items are aligned by their baseline, for example, if the baselines are text, the characters will all sit at the same height, even if the text size is different. See [here](https://stackoverflow.com/questions/34606879/whats-the-difference-between-flex-start-and-baseline) for more details
 
 ---
 ---
